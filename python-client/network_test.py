@@ -202,7 +202,7 @@ def ready():
 def main():
     #websocket.enableTrace(True)
     ready()
-    ws = websocket.WebSocketApp("ws://1.234.27.139:40022/banking",
+    ws = websocket.WebSocketApp("ws://:/banking",
                                 on_message = on_message,
                                 on_error = on_error,
                                 on_close = on_close)
@@ -239,7 +239,7 @@ main()
 #
 # if __name__ == "__main__":
 #     websocket.enableTrace(True)
-#     ws = websocket.WebSocketApp("ws://1.234.27.139:40022/banking",
+#     ws = websocket.WebSocketApp("ws://:/banking",
 #                                 on_message = on_message,
 #                                 on_error = on_error,
 #                                 on_close = on_close)

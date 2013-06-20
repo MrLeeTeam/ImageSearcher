@@ -28,7 +28,7 @@ __author__ = 'grace'
 
 def init():
     global con
-    con = psycopg2.connect(host="58.229.105.83", database="mrlee", user="mrlee", password="altmxjfl")
+    con = psycopg2.connect(host="", database="", user="", password="")
 
     #cursor = con.cursor()
     #cursor.execute("UPDATE blog_meta set crawler_id = 0, last_crawl = %s where b_id = %s", [datetime.datetime.now(), b_id])
@@ -423,7 +423,7 @@ def loadCosineDesc():
                                 print files
 
                                 clientsock = socket(AF_INET, SOCK_STREAM)
-                                clientsock.connect(('58.229.105.84',58824))
+                                clientsock.connect(('',))
 
                                 response = clientsock.recv(10)
                                 print response
